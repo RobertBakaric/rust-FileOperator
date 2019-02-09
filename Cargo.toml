@@ -9,3 +9,5 @@ edition = "2018"
 
 [dependencies]
 folib = { path = "folib" }
+clap = "*"
+regex = "*"
