@@ -8,6 +8,7 @@ edition = "2018"
 [workspace]
 
 [dependencies]
-folib = { path = "folib" }
 clap = "*"
 regex = "*"
+folib = { path = "folib" }
+

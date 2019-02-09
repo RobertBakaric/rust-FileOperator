@@ -30,6 +30,8 @@
 
 
 extern crate clap;
+use clap::*;
+
 mod ui;
 use std::io::*;
 use ui::cli::*;
@@ -37,10 +39,14 @@ use ui::cli::*;
 extern crate folib;
 
 fn main() {
+	
+	let options = parse_cli();
+	println!("I'm using the library: {:?}", folib::really_complicated_code(1, 2));
+	
+	println!("Input: thei is ma inpour::: {}", options.value_of("input").unwrap());
 
 
-    let options = parse_cli();
 
-    println!("I'm using the library: {:?}", folib::really_complicated_code(1, 2));
+	
 }
 
