@@ -1,0 +1,1 @@
+/home/robert/projects/Algorithms/rust-FileOperator/target/debug/rust-FileOperator: /home/robert/projects/Algorithms/rust-FileOperator/folib/src/lib.rs /home/robert/projects/Algorithms/rust-FileOperator/src/main.rs

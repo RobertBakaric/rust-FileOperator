@@ -1,0 +1,11 @@
+[package]
+name = "rust-FileOperator"
+version = "0.1.0"
+authors = ["robert <rbakaric@exaltum.eu>"]
+edition = "2018"
+
+
+[workspace]
+
+[dependencies]
+folib = { path = "folib" }

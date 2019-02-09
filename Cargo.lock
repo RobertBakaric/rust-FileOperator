@@ -1,0 +1,11 @@
+[[package]]
+name = "folib"
+version = "0.1.0"
+
+[[package]]
+name = "rust-FileOperator"
+version = "0.1.0"
+dependencies = [
+ "folib 0.1.0",
+]
+
