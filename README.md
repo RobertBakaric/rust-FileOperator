@@ -23,6 +23,43 @@ cargo build
 
 ./fo -h
 
+
+FileOperator 0.1.0
+Robert Bakaric <rbakaric@exaltum.eu>
+
+ ________ ________     
+|\  _____\\   __  \    
+\ \  \__/\ \  \|\  \   
+ \ \   __\\ \  \\\  \  
+  \ \  \_| \ \  \\\  \ 
+   \ \__\   \ \_______\
+    \|__|    \|_______|                        
+ 
+
+USAGE:
+    fo [FLAGS] [OPTIONS] --input <FILE> [SUBCOMMAND]
+
+FLAGS:
+    -h, --help       Prints help information
+    -v               Sets the level of verbosity
+    -V, --version    Prints version information
+
+OPTIONS:
+    -i, --input <FILE>     Input sam file <required>
+    -o, --output <FILE>    Output bam file [default: stdout]
+
+SUBCOMMANDS:
+    decrypt    Decrypts the encrypted records
+    encrypt    Ecrypts the records
+    head       prints first n records
+    help       Prints this message or the help of the given subcommand(s)
+    select     Selects records depending on the selection key
+    split      Selects records depending on the split key
+    tail       prints last n records
+
+
+
+
 ./fo split   -i in -x ">"|fasta|fastq -n 20|file -o out
 ./fo head    -i in -x ">"|fasta|fastq -n  20|file -o out
 ./fo tail    -i in -x ">"|fasta|fastq -n  20|file -o out
