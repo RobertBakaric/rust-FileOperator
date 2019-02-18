@@ -15,17 +15,21 @@ To install rust-FileOperator, first install Rust. rust-FileOperator is currently
 To install rust-FileOperator itself: 
 
 ```
-cargo install rust-FileOperator
+cargo build 
 ```
 
 ## Usage
 ```
 
-./rust-FileOperator -h.
+./fo -h
 
-./rust-FileOperator -i in.bam -
-
-./rust-FileOperator -i out.sam 
+./fo split   -i in -x ">"|fasta|fastq -n 20|file -o out
+./fo head    -i in -x ">"|fasta|fastq -n  20|file -o out
+./fo tail    -i in -x ">"|fasta|fastq -n  20|file -o out
+./fo select  -i in -x ">"|fasta|fastq -n  20|file -o out
+./fo encrypt -i in -x ">"|fasta|fastq -n  20|file -o out
+./fo decrypt -i in -x ">"|fasta|fastq -n  20|file -o out
+ 
 
 
 ```

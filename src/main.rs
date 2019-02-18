@@ -44,9 +44,6 @@ fn main() {
 	println!("I'm using the library: {:?}", folib::really_complicated_code(1, 2));
 	
 	println!("Input: thei is ma inpour::: {}", options.value_of("input").unwrap());
-
-
-
 	
 }
 

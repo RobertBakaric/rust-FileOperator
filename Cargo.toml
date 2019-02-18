@@ -1,5 +1,5 @@
 [package]
-name = "rust-FileOperator"
+name = "fo"
 version = "0.1.0"
 authors = ["robert <rbakaric@exaltum.eu>"]
 edition = "2018"
